@@ -5,12 +5,15 @@
 	<body>
 		<h2>Hallo, my name is : </h2>
 		<h3 id="username"></h3>
+		<h3 id="address"></h3>
 	</body>
 	
 	<script>
+
 		let username = window.prompt("Please enter your name");
 		 document.getElementById("username").innerHTML = `Hallo, ${username} `;
-		
+		let address = window.prompt("Please enter your address");
+		document.getElementById("address").innerHTML = `I am from ${address}`;		
 		(function () {
 			window.alert("hallo world");
 		})();
