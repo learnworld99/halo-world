@@ -8,10 +8,11 @@
 	</body>
 	
 	<script>
-		var id = document.getElementById("username");
-		id.InnerHtml = "hari";
+		let username = window.prompt("Please enter your name");
+		 document.getElementById("username").innerHTML = `Hallo, ${username} `;
+		
 		(function () {
-			alert("hallo world");
+			window.alert("hallo world");
 		})();
 	</script>
 </html>
