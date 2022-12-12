@@ -3,9 +3,13 @@
 		<title>hallo world</title>
 	</head>
 	<body>
+		<h2>Hallo, my name is : </h2>
+		<h3 id="username"></h3>
 	</body>
 	
 	<script>
+		var id = document.getElementById("username");
+		id.InnerHtml = "hari";
 		(function () {
 			alert("hallo world");
 		})();
