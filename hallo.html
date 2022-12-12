@@ -3,11 +3,16 @@
 		<title>hallo world</title>
 	</head>
 	<body>
+		<h2>Hallo, my name is : </h2>
+		<h3 id="username"></h3>
 	</body>
 	
 	<script>
+		let username = window.prompt("Please enter your name");
+		 document.getElementById("username").innerHTML = `Hallo, ${username} `;
+		
 		(function () {
-			alert("hallo world");
+			window.alert("hallo world");
 		})();
 	</script>
 </html>
